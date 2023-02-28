@@ -1,0 +1,23 @@
+documentationUrl: https://docsurl.com
+connectionSpecification:
+  $schema: http://json-schema.org/draft-07/schema#
+  title: Marvel Api Spec
+  type: object
+  required:
+    - pub_key
+    - priv_key
+  properties:
+    pub_key:
+      title: Public API token
+      type: string
+      description: "The API token for authentication. See https://developer.marvel.com/account"
+      example: "a very long hex sequence"
+      order: 0
+      airbyte_secret: true
+    priv_key:
+      title: Private API token
+      type: string
+      description: "The API token for authentication. See https://developer.marvel.com/account"
+      example: "a very long hex sequence"
+      order: 1
+      airbyte_secret: true
