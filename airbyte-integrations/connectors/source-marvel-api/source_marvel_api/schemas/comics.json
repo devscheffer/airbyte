@@ -1,141 +1,352 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
+  "type": ["null", "object"],
   "properties": {
-    "code": "int",
-    "status": "string",
-    "copyright": "string",
-    "attributionText": "string",
-    "attributionHTML": "string",
+    "code": {
+      "type": ["null", "integer"]
+    },
+    "status": {
+      "type": ["null", "string"]
+    },
+    "copyright": {
+      "type": ["null", "string"]
+    },
+    "attributionText": {
+      "type": ["null", "string"]
+    },
+    "attributionHTML": {
+      "type": ["null", "string"]
+    },
     "data": {
-      "offset": "int",
-      "limit": "int",
-      "total": "int",
-      "count": "int",
-      "results": [
-        {
-          "id": "int",
-          "digitalId": "int",
-          "title": "string",
-          "issueNumber": "double",
-          "variantDescription": "string",
-          "description": "string",
-          "modified": "Date",
-          "isbn": "string",
-          "upc": "string",
-          "diamondCode": "string",
-          "ean": "string",
-          "issn": "string",
-          "format": "string",
-          "pageCount": "int",
-          "textObjects": [
-            {
-              "type": "string",
-              "language": "string",
-              "text": "string"
-            }
-          ],
-          "resourceURI": "string",
-          "urls": [
-            {
-              "type": "string",
-              "url": "string"
-            }
-          ],
-          "series": {
-            "resourceURI": "string",
-            "name": "string"
-          },
-          "variants": [
-            {
-              "resourceURI": "string",
-              "name": "string"
-            }
-          ],
-          "collections": [
-            {
-              "resourceURI": "string",
-              "name": "string"
-            }
-          ],
-          "collectedIssues": [
-            {
-              "resourceURI": "string",
-              "name": "string"
-            }
-          ],
-          "dates": [
-            {
-              "type": "string",
-              "date": "Date"
-            }
-          ],
-          "prices": [
-            {
-              "type": "string",
-              "price": "float"
-            }
-          ],
-          "thumbnail": {
-            "path": "string",
-            "extension": "string"
-          },
-          "images": [
-            {
-              "path": "string",
-              "extension": "string"
-            }
-          ],
-          "creators": {
-            "available": "int",
-            "returned": "int",
-            "collectionURI": "string",
-            "items": [
-              {
-                "resourceURI": "string",
-                "name": "string",
-                "role": "string"
+      "type": ["null", "object"],
+      "properties": {
+        "offset": {
+          "type": ["null", "integer"]
+        },
+        "limit": {
+          "type": ["null", "integer"]
+        },
+        "total": {
+          "type": ["null", "integer"]
+        },
+        "count": {
+          "type": ["null", "integer"]
+        },
+        "results": {
+          "type": ["null", "array"],
+          "items": {
+            "type": ["null", "object"],
+            "properties": {
+              "id": {
+                "type": ["null", "integer"]
+              },
+              "digitalId": {
+                "type": ["null", "integer"]
+              },
+              "title": {
+                "type": ["null", "string"]
+              },
+              "issueNumber": {
+                "type": "number"
+              },
+              "variantDescription": {
+                "type": ["null", "string"]
+              },
+              "description": {
+                "type": ["null", "string"]
+              },
+              "modified": {
+                "type": ["null", "string"]
+              },
+              "isbn": {
+                "type": ["null", "string"]
+              },
+              "upc": {
+                "type": ["null", "string"]
+              },
+              "diamondCode": {
+                "type": ["null", "string"]
+              },
+              "ean": {
+                "type": ["null", "string"]
+              },
+              "issn": {
+                "type": ["null", "string"]
+              },
+              "format": {
+                "type": ["null", "string"]
+              },
+              "pageCount": {
+                "type": ["null", "integer"]
+              },
+              "textObjects": {
+                "type": ["null", "array"],
+                "items": {
+                  "type": ["null", "object"],
+                  "properties": {
+                    "type": {
+                      "type": ["null", "string"]
+                    },
+                    "language": {
+                      "type": ["null", "string"]
+                    },
+                    "text": {
+                      "type": ["null", "string"]
+                    }
+                  }
+                }
+              },
+              "resourceURI": {
+                "type": ["null", "string"]
+              },
+              "urls": {
+                "type": ["null", "array"],
+                "items": {
+                  "type": ["null", "object"],
+                  "properties": {
+                    "type": {
+                      "type": ["null", "string"]
+                    },
+                    "url": {
+                      "type": ["null", "string"]
+                    }
+                  }
+                }
+              },
+              "series": {
+                "type": ["null", "object"],
+                "properties": {
+                  "resourceURI": {
+                    "type": ["null", "string"]
+                  },
+                  "name": {
+                    "type": ["null", "string"]
+                  }
+                }
+              },
+              "variants": {
+                "type": ["null", "array"],
+                "items": {
+                  "type": ["null", "object"],
+                  "properties": {
+                    "resourceURI": {
+                      "type": ["null", "string"]
+                    },
+                    "name": {
+                      "type": ["null", "string"]
+                    }
+                  }
+                }
+              },
+              "collections": {
+                "type": ["null", "array"],
+                "items": {
+                  "type": ["null", "object"],
+                  "properties": {
+                    "resourceURI": {
+                      "type": ["null", "string"]
+                    },
+                    "name": {
+                      "type": ["null", "string"]
+                    }
+                  }
+                }
+              },
+              "collectedIssues": {
+                "type": ["null", "array"],
+                "items": {
+                  "type": ["null", "object"],
+                  "properties": {
+                    "resourceURI": {
+                      "type": ["null", "string"]
+                    },
+                    "name": {
+                      "type": ["null", "string"]
+                    }
+                  }
+                }
+              },
+              "strings": {
+                "type": ["null", "array"],
+                "items": {
+                  "type": ["null", "object"],
+                  "properties": {
+                    "type": {
+                      "type": ["null", "string"]
+                    },
+                    "string": {
+                      "type": ["null", "string"]
+                    }
+                  }
+                }
+              },
+              "prices": {
+                "type": ["null", "array"],
+                "items": {
+                  "type": ["null", "object"],
+                  "properties": {
+                    "type": {
+                      "type": ["null", "string"]
+                    },
+                    "price": {
+                      "type": "number"
+                    }
+                  }
+                }
+              },
+              "thumbnail": {
+                "type": ["null", "object"],
+                "properties": {
+                  "path": {
+                    "type": ["null", "string"]
+                  },
+                  "extension": {
+                    "type": ["null", "string"]
+                  }
+                }
+              },
+              "images": {
+                "type": ["null", "array"],
+                "items": {
+                  "type": ["null", "object"],
+                  "properties": {
+                    "path": {
+                      "type": ["null", "string"]
+                    },
+                    "extension": {
+                      "type": ["null", "string"]
+                    }
+                  }
+                }
+              },
+              "creators": {
+                "type": ["null", "object"],
+                "properties": {
+                  "available": {
+                    "type": ["null", "integer"]
+                  },
+                  "returned": {
+                    "type": ["null", "integer"]
+                  },
+                  "collectionURI": {
+                    "type": ["null", "string"]
+                  },
+                  "items": {
+                    "type": ["null", "array"],
+                    "items": {
+                      "type": ["null", "object"],
+                      "properties": {
+                        "resourceURI": {
+                          "type": ["null", "string"]
+                        },
+                        "name": {
+                          "type": ["null", "string"]
+                        },
+                        "role": {
+                          "type": ["null", "string"]
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "characters": {
+                "type": ["null", "object"],
+                "properties": {
+                  "available": {
+                    "type": ["null", "integer"]
+                  },
+                  "returned": {
+                    "type": ["null", "integer"]
+                  },
+                  "collectionURI": {
+                    "type": ["null", "string"]
+                  },
+                  "items": {
+                    "type": ["null", "array"],
+                    "items": {
+                      "type": ["null", "object"],
+                      "properties": {
+                        "resourceURI": {
+                          "type": ["null", "string"]
+                        },
+                        "name": {
+                          "type": ["null", "string"]
+                        },
+                        "role": {
+                          "type": ["null", "string"]
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "stories": {
+                "type": ["null", "object"],
+                "properties": {
+                  "available": {
+                    "type": ["null", "integer"]
+                  },
+                  "returned": {
+                    "type": ["null", "integer"]
+                  },
+                  "collectionURI": {
+                    "type": ["null", "string"]
+                  },
+                  "items": {
+                    "type": ["null", "array"],
+                    "items": {
+                      "type": ["null", "object"],
+                      "properties": {
+                        "resourceURI": {
+                          "type": ["null", "string"]
+                        },
+                        "name": {
+                          "type": ["null", "string"]
+                        },
+                        "type": {
+                          "type": ["null", "string"]
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "events": {
+                "type": ["null", "object"],
+                "properties": {
+                  "available": {
+                    "type": ["null", "integer"]
+                  },
+                  "returned": {
+                    "type": ["null", "integer"]
+                  },
+                  "collectionURI": {
+                    "type": ["null", "string"]
+                  },
+                  "items": {
+                    "type": ["null", "array"],
+                    "items": {
+                      "type": ["null", "object"],
+                      "properties": {
+                        "resourceURI": {
+                          "type": ["null", "string"]
+                        },
+                        "name": {
+                          "type": ["null", "string"]
+                        }
+                      }
+                    }
+                  }
+                }
               }
-            ]
-          },
-          "characters": {
-            "available": "int",
-            "returned": "int",
-            "collectionURI": "string",
-            "items": [
-              {
-                "resourceURI": "string",
-                "name": "string",
-                "role": "string"
-              }
-            ]
-          },
-          "stories": {
-            "available": "int",
-            "returned": "int",
-            "collectionURI": "string",
-            "items": [
-              {
-                "resourceURI": "string",
-                "name": "string",
-                "type": "string"
-              }
-            ]
-          },
-          "events": {
-            "available": "int",
-            "returned": "int",
-            "collectionURI": "string",
-            "items": [
-              {
-                "resourceURI": "string",
-                "name": "string"
-              }
-            ]
+            }
           }
         }
-      ]
+      }
     },
-    "etag": "string"
+    "etag": {
+      "type": ["null", "string"]
+    }
   }
 }
